@@ -1,0 +1,135 @@
+/* 初始化样式 */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* 导航栏 */
+.nav {
+    height: 100px;
+    background:linear-gradient(#1c03f7,#6698fb);
+}
+.navlist {
+    width: 100%;
+    margin: auto;
+}
+    /* 导航栏的内容 */
+    .nav-logo {
+        /* position: absolute; */
+        float: left;
+        height: 100px;
+        clip-path: circle(50px at 50px 50px);
+        user-select: none;
+    }
+    .nav-name {
+        float: left;
+        font-size: 60px;
+        width: 320px;
+        text-align: center;
+        line-height: 100px;
+        color: aliceblue;
+    }
+    .nav-item {
+        float: left;
+        height: 100px;
+        width: 100px;
+        background: linear-gradient(#1c03f7,#6698fb);
+        border: 0;
+        line-height: 100px;
+        text-align: center;
+        font-size: 20px;
+        color: aliceblue;
+    }
+    .nav-item:hover {
+        background: linear-gradient(#0010bb,#5078c7);
+        color: aliceblue;
+        font-size: 25px;
+    }
+
+    /* 轮播图 */
+    .scroll-img-out {
+        margin: auto;
+        width: 60vw;
+        aspect-ratio: 16/9;
+        border: 0;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .scroll-img-In {
+        height: 100%;
+        width: 300%;
+        position: relative;
+        left: 0;
+        transition: all 0.8s;
+    }
+        /* 轮播图的图片 */
+        .scroll-img1 {
+            width: 60vw;
+            aspect-ratio: 16/9;
+            background-color: black;
+            float: left;
+            background-image: url(./texture/scroll-img1.png);
+            background-size: 100% 100%;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            user-select: none;
+        }
+        .scroll-img2 {
+            width: 60vw;
+            aspect-ratio: 16/9;
+            background-color: rgb(208, 49, 49);
+            float: left;
+            background-image: url(./texture/scroll-img2.png);
+            background-size: 100% 100%;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            user-select: none;
+        }
+        .scroll-img3 {
+            width: 60vw;
+            aspect-ratio: 16/9;
+            background-color: rgb(0, 30, 255);
+            float: left;
+            background-image: url(./texture/scroll-img3.png);
+            background-size: 100% 100%;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            user-select: none;
+        }
+        /* 控制轮播图的按钮 */
+        #left-scroll {
+            width: 20px;
+            height: 20px;
+            background-color: rgb(4, 130, 144);
+            border: none;
+            border-radius: 5px;
+            color: #0010bb;
+            user-select: none;
+            position: relative;
+            top: -36vh;
+            left: 18%;
+        }
+        #right-scroll {
+            width: 20px;
+            height: 20px;
+            background-color: rgb(4, 130, 144);
+            border: none;
+            border-radius: 5px;
+            color: #0010bb;
+            user-select: none;
+            position: relative;
+            top: -40vh;
+            left: 80%;
+        }
+        #left-scroll:hover {
+             color: white;
+         }
+        #right-scroll:hover {
+             color: white;
+         }
+        
