@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,26 +10,102 @@
     <!-- 导航 -->
     <div class="nav" id="nav">
         <ul class="navlist">
-            <li><img class="nav-logo" alt="1" src="./texture/logo.ico"></li>
+            <li><img class="nav-logo" alt="1" src="./texture/logo.ico" draggable="false"></li>
             <li><span class="nav-name">MC社</span></li>
             <li><a class="nav-item" href="">社团主页</a></li>
-            <li><a class="nav-item" href="">常见问题</a></li>
-            <li><a class="nav-item" href="">社团服务</a></li>
+            <li id="Faq"><span class="nav-item">常见问题</span></li>
+            <li><a class="nav-item" href="#clubIntroduce">社团介绍</a></li>
         </ul>
     </div>
     <!-- 轮播图 -->
     <div class="scroll-img-out">
         <div class="scroll-img-In">
-            <div class="scroll-img1"><h1>自由建造</h1></div>
-            <div class="scroll-img2"><h1>团队竞技</h1></div>
-            <div class="scroll-img3"><h1>生存发展</h1></div>
+            <div class="scroll-img1">
+                <h1>自由建造</h1>
+                在这里，你可以尽情创造自<br>
+                己的世界，没有任何限制。
+            </div>
+            <div class="scroll-img2">
+                <h1>团队竞技</h1>
+                在这里，你可以尽情挑战其他玩家，用你<br>
+                的实力和策略夺取胜利，成为最强者！
+            </div>
+            <div class="scroll-img3">
+                <h1>生存发展</h1>
+                在这里，挑战与生存共舞，无尽冒险等待。
+            </div>
+        </div>
+        <div id="scroll-button">
+            <div id="right-scroll" onclick="rightScroll()">&gt;</div>
+            <div id="left-scroll" onclick="leftScroll()">&lt;</div>
+        </div>
+        <div class="scrollView">
+            <div id="scroll1" class="scrollViewItem">_</div>
+            <div id="scroll2" class="scrollViewItem">_</div>
+            <div id="scroll3" class="scrollViewItem">_</div>
         </div>
     </div>
-    <p><div id="left-scroll" onclick="leftScroll()">←</div>
-    <div id="right-scroll" onclick="rightScroll()">→</div></p>
-    <!-- 功能 -->
+    <!-- 功能按钮 -->
+    <div class="btns">
+        <button id="btn1" class="btn"><img class="btn-ico" src="texture/ico/btn1.png" draggable="false"></img>常见问题</button>
+        <button id="btn2" class="btn"><img class="btn-ico" src="texture/ico/btn2.png" draggable="false"></img>相关软件</button>
+        <button id="btn3" class="btn"><img class="btn-ico" src="texture/ico/btn3.png" draggable="false"></img>关于我们</button>
+        <button id="btn4" class="btn"><img class="btn-ico" src="texture/ico/btn4.png" draggable="false"></img>加入我们</button>
+    </div>
     <!-- 介绍 -->
+    <div class="introduceTop"></div>
+    <div class="introduce">
+        <img class="logo" src="texture/logo.ico" draggable="false" alt="MC社"><h1 id="clubIntroduce">社团介绍</h1>
+        <hr>
+        我们是由一群热爱 Minecraft 的玩家一起建立的一个社群。在这里，我们不仅可以<br>
+        享受游戏的乐趣，还可以结交新的朋友，分享自己的创意和技巧。建立 MC 社团的初<br>
+        衷是希望打造一个开放、包容、友好的社群环境，让所有喜欢 Minecraft 的玩家都<br>
+        能够在这里找到归属感。我们欢迎各种年龄段和背景的玩家加入，无论你是初学者还<br>
+        是老手，都可以在这里找到自己的位置。为了让社团更加有活力和互动性，我们定期<br>
+        举行各种活动和比赛。比如建造比赛，玩家可以根据指定的主题和要求，在规定时间<br>
+        内建造自己的作品。我们会邀请其他玩家和社群成员来评选最佳作品，并颁发奖励。<br>
+        除了建造比赛，我们还会举行其他类型的比赛，比如PvP对战、探险挑战等等。这些<br>
+        比赛不仅可以增加玩家之间的互动和竞争，还可以让玩家们在游戏中获得更多的挑战<br>
+        和成就感。除了定期举行活动和比赛，我们还架设了MC服务器，为社员提供交流的平<br>
+        台。这些公共设施可以让我们更好地合作和互助，在游戏中共同创造更多有趣的内容。<hr>
+        <img src="texture/ico/btn2.png" draggable="false" class="act"><h1>社团活动</h1><hr>
+        <h2>多人竞技</h2>
+        我们会不定期举行团队竞技类项目，以增强社团的凝聚力。类型多种多样，包括但不限<br>
+        于Bedwars,Skyywars等。<span class="note">参考<a href="https://hypixel.net/play/#games">https://hypixel.net/play/#games</a></span>
+        <h2>长期生存</h2>
+        我们搭建了自己的生存服务器，供社员游玩。为喜欢生存发展的小伙伴创建了一个良好的平台。
+        <h2>自由建造</h2>
+        我们也拥有专门为喜欢建筑的成员设计的服务器，可以让大家一起建造、交流。
+    </div>
+    <div class="introduceBottom"></div>
     <!-- 页尾 -->
+    <div class="bottom">
+        <div class="bottomTop"></div>
+        <img src="texture/logo.ico" class="bottomLogo" draggable="false">
+        <p>@MC社</p>
+    </div>
+    <!-- 弹窗 -->
+    <div id="hitBox">a</div>
+    <div id="ejFaqWin" class="ej-wins">
+        <h2>敬请期待</h2>
+        coming soon !
+    </div>
+    <div id="ejMcWin" class="ej-wins">
+        <img src="" alt="">
+        <h2>你还没有MC？</h2>
+        ---&gt;
+        <a href="https://www.minecraft.net/">点击这里</a>
+        &lt;---
+    </div>
+    <div id="ejUsWin" class="ej-wins">
+        <img src="texture/ejUs.jpg" style="height:280px;float: left;top:10px;" draggable="false">
+        <h2>关于我们</h2>
+        MC社是一个以Minecraft为核心的社区，<br>
+        我们是一个追求自由的、和谐友爱的团体。
+    </div>
+    <div id="ejJnusWin" class="ej-wins">
+        <img id="joinUs" src="texture/joinUs.jpg" alt="加入我们" draggable="false">
+    </div>
 </body>
 <script src="script.js"></script>
 <!-- <script src="../lib/vue3.global.js"></script> -->
